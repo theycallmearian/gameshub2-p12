@@ -1,0 +1,47 @@
+.connectFourBoard {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--gap-xs);
+  justify-items: center;
+  max-width: 490px;
+  margin: 0 auto;
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 20px;
+  padding: 1rem 0.2rem 0.8rem 0.2rem;
+  box-shadow: 0 0 22px #222a, 0 0 5px var(--color-shadow);
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--color-secondary);
+  background: var(--color-board-bg);
+  margin: var(--gap-xs) auto;
+  cursor: pointer;
+  box-shadow: 0 0 4px var(--color-shadow);
+  transition: background 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  background: var(--color-accent);
+  box-shadow: 0 0 12px var(--color-accent);
+}
+.yellow {
+  background: var(--color-warning);
+  box-shadow: 0 0 12px var(--color-warning);
+}
+
+@media (max-width: 700px) {
+  .connectFourBoard {
+    max-width: 99vw;
+    padding: 0.5rem 0.02rem 0.3rem 0.02rem;
+  }
+  .cell {
+    width: 29px;
+    height: 29px;
+  }
+}

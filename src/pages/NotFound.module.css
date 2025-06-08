@@ -1,0 +1,16 @@
+.notFoundContainer {
+  text-align: center;
+  margin-top: 4rem;
+  background: rgba(16, 16, 16, 0.9);
+  padding: 1.1rem 0.2rem 1.2rem 0.2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 24px #222b, 0 0 8px var(--color-shadow);
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  color: var(--color-accent);
+  font-size: 2.2rem;
+  margin-bottom: 0.9rem;
+}

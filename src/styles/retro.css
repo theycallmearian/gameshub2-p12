@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --color-bg: #181818;
+  --color-primary: #39ff14;
+  --color-secondary: #00eaff;
+  --color-accent: #ff0080;
+  --color-warning: #ffe800;
+  --color-board-bg: #222;
+  --color-card-bg: #111;
+  --color-border: #39ff14;
+  --color-shadow: #00eaff55;
+
+  --font-family-main: 'Press Start 2P', 'VT323', monospace;
+
+  --border-radius: 14px;
+  --border-radius-lg: 20px;
+  --border-width: 4px;
+  --border-width-lg: 6px;
+
+  --gap-xs: 0.25rem;
+  --gap-sm: 0.5rem;
+  --gap: 1rem;
+  --gap-lg: 2rem;
+
+  --margin-xs: 0.25rem;
+  --margin-sm: 0.5rem;
+  --margin: 1rem;
+  --margin-lg: 2rem;
+
+  --padding-xs: 0.3rem;
+  --padding-sm: 0.7rem;
+  --padding: 1.3rem;
+  --padding-lg: 2rem;
+
+  --transition-fast: 0.2s;
+  --transition-med: 0.4s;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background: url("https://res.cloudinary.com/dye4qdrys/image/upload/v1749376932/arianvision/uploads/9bc27292880429.5e569ff84e4d0_i0cork.gif") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--color-primary);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+main, section, article {
+  padding: var(--padding);
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: var(--gap-lg);
+  margin-bottom: var(--gap);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover, a.active {
+  color: var(--color-warning);
+  text-shadow: 0 0 8px var(--color-warning);
+}
+
+.btn, button {
+  font-family: inherit;
+  background: var(--color-card-bg);
+  color: var(--color-warning);
+  border: var(--border-width) solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: var(--padding-xs) var(--padding-lg);
+  font-size: 1rem;
+  box-shadow: 0 4px 0 var(--color-accent);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.btn:hover, button:hover {
+  background: var(--color-secondary);
+  color: var(--color-card-bg);
+  box-shadow: 0 6px 0 var(--color-warning), 0 0 12px var(--color-secondary);
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #39ff14,
+    0 0 20px #00eaff,
+    0 0 40px #ff0080;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { text-shadow:
+    0 0 8px #39ff14,
+    0 0 16px #00eaff,
+    0 0 32px #ff0080; }
+  50% { text-shadow:
+    0 0 16px #fff,
+    0 0 32px #39ff14,
+    0 0 64px #00eaff,
+    0 0 80px #ff0080; }
+}
+
+.retro-frame {
+  border: var(--border-width-lg) solid var(--color-border);
+  background: var(--color-card-bg);
+  padding: var(--padding-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 0 40px var(--color-shadow), 0 0 12px var(--color-border);
+  margin: var(--gap-lg) auto;
+  max-width: 600px;
+  position: relative;
+}
+.retro-frame-title {
+  position: absolute;
+  top: -1.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-card-bg);
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  padding: var(--padding-xs) var(--padding-lg);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--color-accent);
+  box-shadow: 0 2px 0 var(--color-accent);
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap);
+}
+.flex-col {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  gap: var(--gap);
+}
+#root {
+  flex: 1 0 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+@media (max-width: 700px) {
+  main, section, article {
+    padding: var(--padding-sm);
+  }
+  .retro-frame {
+    max-width: 98vw;
+    padding: var(--padding);
+  }
+}
+@media (max-width: 500px) {
+  h1, .neon {
+    font-size: 1.3rem !important;
+  }
+  .retro-frame {
+    padding: var(--padding-sm);
+  }
+}

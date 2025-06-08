@@ -1,0 +1,43 @@
+.memoryContainer {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 98vw;
+  background: rgba(16, 16, 16, 0.93);
+  border-radius: 22px;
+  padding: 1.8rem 0.7rem 1.1rem 0.7rem;
+  box-shadow: 0 0 40px #222a, 0 0 6px var(--color-shadow);
+}
+.scoreLine {
+  color: var(--color-warning);
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.rankingTitle {
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  margin: 1.5rem auto 0.7rem auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.resetBtn {
+  margin: 1.1rem auto 0 auto;
+  margin-bottom: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .memoryContainer {
+    padding: 1rem 0.1rem 1rem 0.1rem;
+  }
+  .scoreLine {
+    font-size: 0.93rem;
+  }
+}

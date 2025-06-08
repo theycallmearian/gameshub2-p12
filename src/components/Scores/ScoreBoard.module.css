@@ -1,0 +1,106 @@
+.memoryItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  color: var(--color-warning);
+  font-size: 1.08rem;
+  margin-bottom: 0.18rem;
+}
+
+.memoryRank {
+  font-weight: bold;
+  color: gold;
+  min-width: 2.1rem;
+  display: inline-block;
+  text-align: right;
+}
+
+li {
+  margin: 1em;
+}
+
+.memoryMoves {
+  font-family: var(--font-family-main);
+  color: var(--color-primary);
+}
+
+.trophy {
+  font-size: 1.12rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 0.18rem;
+}
+
+.c4BigTitle {
+  color: var(--color-primary);
+  font-size: 1.08rem;
+  margin-bottom: 16px;
+  font-family: var(--font-family-main);
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c4ScoreRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.2rem;
+}
+
+.c4ScoreBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 0.18rem 1.2rem 0.22rem 1.2rem;
+  box-shadow: 0 0 8px #111a;
+  justify-content: center;
+  width: 100%;
+}
+
+.c4Emoji {
+  font-size: 1.8rem;
+  vertical-align: middle;
+}
+
+.c4Num {
+  font-size: 1.18rem;
+  font-weight: bold;
+  margin-left: 0.2rem;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+}
+.c4WinLabel {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-left: 0.1rem;
+  margin-right: 0.2rem;
+  font-family: var(--font-family-main);
+  letter-spacing: 1px;
+}
+
+.rankingTitle {
+  display: block;
+  color: var(--color-primary);
+  font-family: var(--font-family-main);
+  font-weight: bold;
+  font-size: 1.08rem;
+  letter-spacing: 2px;
+  margin: 1.5rem auto 0.7rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.scoreBoard {
+  margin: 1.2rem auto 0 auto;
+  padding: 0.7rem 1rem 0.5rem 1rem;
+  max-width: 340px;
+  width: 96%;
+  text-align: center;
+}

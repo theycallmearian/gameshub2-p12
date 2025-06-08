@@ -1,0 +1,35 @@
+.homeContainer {
+  text-align: center;
+  margin-top: 2rem;
+  background: rgba(16, 16, 16, 0.87);
+  padding: 1.2rem 0.2rem 1.6rem 0.2rem;
+  border-radius: 24px;
+  box-shadow: 0 0 24px #222b, 0 0 8px var(--color-shadow);
+  max-width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  font-size: 2.1rem;
+  color: var(--color-warning);
+  text-shadow: 0 0 12px var(--color-accent), 0 0 18px var(--color-primary);
+  margin-bottom: 1.1rem;
+  font-family: var(--font-family-main);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-lg);
+  margin-top: 1.8rem;
+}
+@media (max-width: 600px) {
+  .homeContainer {
+    padding: 0.8rem 0.1rem 1rem 0.1rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .buttons {
+    gap: var(--gap);
+  }
+}

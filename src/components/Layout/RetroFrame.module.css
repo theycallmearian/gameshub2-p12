@@ -1,0 +1,10 @@
+.frame {
+  border: var(--border-width-lg) solid var(--color-border);
+  background: var(--color-card-bg);
+  padding: var(--padding-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 0 40px var(--color-shadow), 0 0 12px var(--color-border);
+  margin: var(--gap-lg) auto;
+  max-width: 600px;
+  position: relative;
+}
