@@ -7,7 +7,7 @@
   font-size: 0.93rem;
   letter-spacing: 1px;
   font-family: var(--font-family-main);
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   width: 100%;

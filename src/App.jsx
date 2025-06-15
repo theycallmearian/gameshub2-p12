@@ -15,13 +15,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <TitleAndMusic
+      <Navbar
         selected={selectedSong}
         setSelected={setSelectedSong}
         volume={volume}
         setVolume={setVolume}
       />
+      <TitleAndMusic />
       <main>
         <Routes>
           <Route path='/' element={<Home />} />

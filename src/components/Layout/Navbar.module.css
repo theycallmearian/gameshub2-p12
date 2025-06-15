@@ -28,6 +28,7 @@
   border: none;
   font-family: var(--font-family-main);
   padding: 0.1rem 0.7rem;
+  margin-top: var(--margin);
 }
 
 .menuItemActive,
@@ -41,6 +42,41 @@
   margin-left: 10px;
   font-size: 1.07rem;
   display: inline;
+}
+
+.musicWrapper {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: nowrap;
+  z-index: 10;
+}
+
+.menu {
+  margin: 0 auto;
+}
+
+.musicWrapper {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: nowrap;
+  z-index: 10;
+}
+
+@media (max-width: 1200px) {
+  .musicWrapper {
+    position: static;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-right: var(--margin-sm);
+  }
 }
 
 @media (max-width: 700px) {
