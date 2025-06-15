@@ -4,10 +4,10 @@ import styles from './NotFound.module.css'
 export default function NotFound() {
   return (
     <section className={styles.notFoundContainer}>
-      <h2 className={styles.title}>404</h2>
+      <h2 className={styles.title}> ¡404!</h2>
       <p>Página no encontrada.</p>
       <Link to='/' className={`${styles.homeButton} btn`} title='Inicio'>
-        🏠 Volver al inicio
+        🏠
       </Link>
     </section>
   )
