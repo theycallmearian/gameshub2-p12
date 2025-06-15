@@ -1,17 +1,17 @@
-import Navbar from "./components/Layout/Navbar";
-import Footer from "./components/Layout/Footer";
-import TitleAndMusic from "./components/Layout/TitleAndMusic";
-import Home from "./pages/Home";
-import Memory from "./pages/Memory";
-import ConnectFour from "./pages/ConnectFour";
-import NotFound from "./pages/NotFound";
-import "./styles/retro.css";
-import React, { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import Navbar from './components/Layout/Navbar'
+import Footer from './components/Layout/Footer'
+import TitleAndMusic from './components/Layout/TitleAndMusic'
+import Home from './pages/Home/Home'
+import Memory from './pages/Memory/Memory'
+import ConnectFour from './pages/ConnectFour/ConnectFour'
+import NotFound from './pages/NotFound/NotFound'
+import './styles/retro.css'
+import React, { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
-  const [selectedSong, setSelectedSong] = useState(0); // 0 = OFF
-  const [volume, setVolume] = useState(0.5);
+  const [selectedSong, setSelectedSong] = useState(0) // 0 = OFF
+  const [volume, setVolume] = useState(0.5)
 
   return (
     <>
@@ -24,15 +24,15 @@ function App() {
       />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/memory" element={<Memory />} />
-          <Route path="/connect-four" element={<ConnectFour />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/memory' element={<Memory />} />
+          <Route path='/connect-four' element={<ConnectFour />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

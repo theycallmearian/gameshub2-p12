@@ -37,35 +37,46 @@
   --transition-med: 0.4s;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   min-height: 100%;
 }
 
 body {
   font-family: var(--font-family-main);
-  background: url("https://res.cloudinary.com/dye4qdrys/image/upload/v1749376932/arianvision/uploads/9bc27292880429.5e569ff84e4d0_i0cork.gif") no-repeat center center fixed;
+  background: url('https://res.cloudinary.com/dye4qdrys/image/upload/v1749376932/arianvision/uploads/9bc27292880429.5e569ff84e4d0_i0cork.gif')
+    no-repeat center center fixed;
   background-size: cover;
   color: var(--color-primary);
   min-height: 100vh;
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 * {
   box-sizing: border-box;
 }
 
-main, section, article {
+main {
+  padding-bottom: 3.5rem;
+}
+
+main,
+section,
+article {
   padding: var(--padding);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin-top: var(--gap-lg);
   margin-bottom: var(--gap);
 }
@@ -75,12 +86,14 @@ a {
   text-decoration: none;
   transition: color var(--transition-fast);
 }
-a:hover, a.active {
+a:hover,
+a.active {
   color: var(--color-warning);
   text-shadow: 0 0 8px var(--color-warning);
 }
 
-.btn, button {
+.btn,
+button {
   font-family: inherit;
   background: var(--color-card-bg);
   color: var(--color-warning);
@@ -90,9 +103,11 @@ a:hover, a.active {
   font-size: 1rem;
   box-shadow: 0 4px 0 var(--color-accent);
   cursor: pointer;
-  transition: background var(--transition-fast), color var(--transition-fast), box-shadow var(--transition-fast);
+  transition: background var(--transition-fast), color var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
-.btn:hover, button:hover {
+.btn:hover,
+button:hover {
   background: var(--color-secondary);
   color: var(--color-card-bg);
   box-shadow: 0 6px 0 var(--color-warning), 0 0 12px var(--color-secondary);
@@ -100,23 +115,19 @@ a:hover, a.active {
 
 .neon {
   color: #fff;
-  text-shadow:
-    0 0 5px #fff,
-    0 0 10px #39ff14,
-    0 0 20px #00eaff,
+  text-shadow: 0 0 5px #fff, 0 0 10px #39ff14, 0 0 20px #00eaff,
     0 0 40px #ff0080;
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { text-shadow:
-    0 0 8px #39ff14,
-    0 0 16px #00eaff,
-    0 0 32px #ff0080; }
-  50% { text-shadow:
-    0 0 16px #fff,
-    0 0 32px #39ff14,
-    0 0 64px #00eaff,
-    0 0 80px #ff0080; }
+  0%,
+  100% {
+    text-shadow: 0 0 8px #39ff14, 0 0 16px #00eaff, 0 0 32px #ff0080;
+  }
+  50% {
+    text-shadow: 0 0 16px #fff, 0 0 32px #39ff14, 0 0 64px #00eaff,
+      0 0 80px #ff0080;
+  }
 }
 
 .retro-frame {
@@ -167,7 +178,9 @@ footer {
 }
 
 @media (max-width: 700px) {
-  main, section, article {
+  main,
+  section,
+  article {
     padding: var(--padding-sm);
   }
   .retro-frame {
@@ -176,7 +189,8 @@ footer {
   }
 }
 @media (max-width: 500px) {
-  h1, .neon {
+  h1,
+  .neon {
     font-size: 1.3rem !important;
   }
   .retro-frame {

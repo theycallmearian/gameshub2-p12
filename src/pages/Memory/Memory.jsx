@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import MemoryBoard from '../components/Memory/MemoryBoard'
-import ScoreBoardMemory from '../components/Scores/ScoreBoardMemory'
-import RetroFrame from '../components/Layout/RetroFrame'
+import MemoryBoard from '../../components/Memory/MemoryBoard'
+import ScoreBoardMemory from '../../components/Scores/ScoreBoardMemory'
+import RetroFrame from '../../components/Layout/RetroFrame'
 import styles from './Memory.module.css'
 
 const EMOJIS = ['🕹️', '👾', '🏁', '🎲', '💾', '🕰️', '🎮', '🏆']
